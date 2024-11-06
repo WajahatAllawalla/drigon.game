@@ -1,0 +1,53 @@
+#score {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#game {
+  width: 600px;
+  height: 300px;
+  border: 2px solid black;
+  margin: auto;
+  background-image: url("./img/background.jpg");
+  background-size: cover;
+  position:absolute;
+  overflow: hidden;
+  background-repeat: repeat+y;
+}
+
+#drigon {
+  height: 95px;
+  width: 195px;
+  top: 205px;
+  left: 50px;
+  position: absolute;
+  background-image: url("./img/dduu97f-aa48c62a-8d27-4176-948b-c51ce8775929.gif");
+  background-size: cover;
+}
+
+#rock {
+  width: 50px;
+  height: 50px;
+  top: 260px;
+  left: 550px;
+  position: absolute;
+  background-image: url("./img/rock.png");
+  background-size: cover;
+  animation: rock-move 1.33s infinite linear;
+}
+
+@keyframes rock-move {
+  0% { left: 550px; }
+  100% { left: -50px; }
+}
+
+.jump {
+  animation: jump 0.5s ease-out;
+}
+
+@keyframes jump {
+  0% { top: 205px; }
+  50% { top: 75px; }
+  100% { top: 205px; }
+}
